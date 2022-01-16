@@ -2,7 +2,7 @@
 
 - Export a vidly_jwtPrivateKey = mySecretKey variable.
 
-- Export a free port for localhost with name variable PORT.
+- Export a free port for localhost with variable name PORT.
 
 - Run a MongoDB in local environment.
 
