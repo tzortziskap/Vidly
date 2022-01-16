@@ -1,7 +1,9 @@
 const mongoose = require("mongoose");
 const winston = require('winston');
+const config = require('config');
 
 module.exports = function() {
-  mongoose.connect('mongodb://localhost/vidly')
-    .then(() => winston.info("Connect to MongoDB..."))
+  const db = config.get('db');
+  mongoose.connect(db)
+    .then(() => winston.info(`Connect to ${db}...`));
 }
