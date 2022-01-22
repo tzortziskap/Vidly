@@ -2,6 +2,8 @@ const request = require('supertest');
 const { Genres } = require("../../models/genres");
 const { Users } = require("../../models/users");
 
+let server;
+
 describe('auth middleware', () => {
 
   beforeEach(() => { server = require('../../index'); });
